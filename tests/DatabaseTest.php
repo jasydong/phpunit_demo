@@ -9,7 +9,7 @@ class DatabaseTest extends TestCase
     /**
      * 初始化数据表
      */
-    public function setUp()
+    protected function setUp() : void
     {
         $this->_pdo = new PDO($GLOBALS['DB_DSN'], $GLOBALS['DB_USER'], $GLOBALS['DB_PASSWD']);
         $this->_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -23,7 +23,7 @@ class DatabaseTest extends TestCase
     /**
      * 删除数据表
      */
-    public function tearDown()
+    protected function tearDown() : void
     {
         $this->_pdo->query("DROP TABLE hello_world");
     }
