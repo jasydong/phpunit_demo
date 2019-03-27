@@ -18,9 +18,10 @@ before_script:
   # git clone
   - cd ~
   - git clone https://github.com/jasydong/phpunit_demo.git
+  - cd phpunit_demo
 
 # use phpunit to test
-script: phpunit --configuration phpunit.xml --coverage-text
+script: phpunit --configuration tests/phpunit.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
