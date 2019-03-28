@@ -21,7 +21,7 @@ before_script:
   - cd phpunit_demo
 
 # use phpunit to test
-script: phpunit --configuration tests/phpunit.xml tests/DatabaseTest.php
+script: phpunit
 
 # configure notifications (email, IRC, campfire etc)
 notifications:

@@ -1,6 +1,9 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
+/**
+ * 测试数据库功能
+ */
 class DatabaseTest extends TestCase
 {
     //PDO实例

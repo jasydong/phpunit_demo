@@ -6,4 +6,10 @@
         <var name="DB_PASSWD" value="123456" />
         <var name="DB_DBNAME" value="test" />
     </php>
+
+    <testsuites>
+        <testsuite name="Test Suites">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
 </phpunit>
